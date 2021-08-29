@@ -23,7 +23,7 @@ pipeline {
 		always {
 			echo "main wo unhoni hoon jo koi taal nai sakta! haaahaaa"
 		}
-		successful {
+		success {
 			echo "Avengers, Assemble!"
 		}
 		failure {
