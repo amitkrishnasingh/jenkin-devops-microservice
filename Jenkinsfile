@@ -1,10 +1,12 @@
 
 //DECLARATIVE
 pipeline {
-	agent any
+	//agent any
+	agent {docker : "maven:3.1.0"}
 	stages {
 		stage('build') {
 			steps {
+			sh 'maven --version'
 			echo "build"	
 			}
 		}
@@ -29,6 +31,9 @@ pipeline {
 		failure {
 			echo "I know you could do better than that !"
 		}
+		//changed {
+		//	echo "mail dev to fix build"
+		//}
 	}
 
 }
