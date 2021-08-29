@@ -27,7 +27,7 @@ pipeline {
 			echo "Avengers, Assemble!"
 		}
 		failure {
-			echo "I know you could do better than that!"
+			echo "I know you could do better than that !"
 		}
 	}
 
