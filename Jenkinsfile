@@ -19,6 +19,17 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			echo "main wo unhoni hoon jo koi taal nai sakta! haaahaaa"
+		}
+		successful {
+			echo "Avengers, Assemble!"
+		}
+		failure {
+			echo "I know you could do better than that!"
+		}
+	}
 
 }
 
